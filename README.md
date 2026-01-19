@@ -42,15 +42,17 @@ The voting application consists of the following components:
 - Installed **Prometheus and Grafana using Helm**
 - Monitored Kubernetes cluster health
 - Visualized CPU, memory, and pod metrics in Grafana dashboards
+## 🏗️ Architecture
 
-> ## 🧱 Architecture
-
-![Architecture Diagram](k8s-kind-voting-app.png)
+![K8s Kind Voting App Architecture](images/k8-kind-voting-app.png)
 
 ## 📊 Observability
 
-![Grafana Dashboard 1](grafana3.png)
-![Grafana Dashboard 2](grafana2.png)
+### Grafana Dashboard 1
+![Grafana Dashboard 1](images/grafana3.png)
+
+### Grafana Dashboard 2
+![Grafana Dashboard 2](images/grafana2.png)
 
 
 
