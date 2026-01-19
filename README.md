@@ -1,99 +1,75 @@
 # 🚀 K8s Kind Voting App
 
-**Author:** Onkar Ghugare
+**Author:** Onkar Ghugare  
 
-A comprehensive guide to setting up a **Kubernetes cluster using Kind on an AWS EC2 instance**, installing and configuring **Helm**, and deploying a **microservices-based Voting Application** with observability using **Prometheus and Grafana**.
+This project demonstrates deploying a **simple Voting Application** on an **AWS EC2 instance using Kubernetes (Kind)** and adding **monitoring with Prometheus and Grafana using Helm**.
 
 ---
 
 ## 📌 Overview
 
-This project demonstrates an end-to-end DevOps workflow:
-
-* Launching an AWS EC2 instance
-* Installing Docker and Kind
-* Creating a Kubernetes cluster using Kind
-* Installing and configuring `kubectl`
-* Setting up Kubernetes Dashboard
-* Installing and configuring Helm
-* Deploying applications using Helm
-* Monitoring the cluster and application using Prometheus & Grafana
+In this project, I set up a local Kubernetes cluster using **Kind** on an AWS EC2 instance and deployed a microservices-based voting application.  
+The goal is to gain hands-on experience with **Kubernetes deployment, service management, and observability**.
 
 ---
 
-## 🧱 Architecture
+## 🧱 Application Architecture
 
-The application follows a microservices architecture:
+The voting application consists of the following components:
 
-* 🗳 **Vote App (Python)** – Front-end web app to vote between two options
-* 🧰 **Redis** – In-memory queue to collect votes
-* 🔄 **Worker (.NET)** – Processes votes and stores them
-* 💾 **PostgreSQL** – Persistent database (Docker volume-backed)
-* 📊 **Result App (Node.js)** – Displays voting results in real time
-
-## 📊 Observability
-
-Monitoring is implemented using cloud-native tools:
-
-* **Prometheus** – Metrics collection and scraping
-* **Grafana** – Visualization and dashboards
-
-## 📊 Visual Overview
-
-This project includes Kubernetes workloads and monitoring dashboards for the voting application.
-
-Due to system availability constraints, screenshots are not included at this time. Visual artifacts such as Grafana dashboards, Prometheus metrics, and application UI can be easily added later once the environment is accessible.
+- 🗳 **Vote App (Python)** – Front-end web app to cast votes  
+- 🧰 **Redis** – Stores incoming votes temporarily  
+- 🔄 **Worker (.NET)** – Processes votes from Redis  
+- 💾 **PostgreSQL** – Stores vote data persistently  
+- 📊 **Result App (Node.js)** – Displays voting results in real time  
 
 ---
 
-## ⚙️ Tools & Technologies
+## ⚙️ Tools & Technologies Used
 
-* **AWS EC2** – Infrastructure hosting
-* **Docker** – Containerization
-* **Kind** – Kubernetes cluster on EC2
-* **Kubernetes Dashboard** – Cluster management UI
-* **Helm** – Helm-based application management
-* **Helm** – Package manager for Kubernetes
-* **Prometheus & Grafana** – Monitoring and observability
-
----
-
-## 📄 Resume Description
-
-### Project Title
-
-**Deployment and Monitoring of Containerized Applications on AWS EC2 using Kubernetes**
-
-### Description
-
-Implemented and managed a containerized microservices application on AWS EC2 using Kubernetes (Kind). Deployed application components using Kubernetes manifests and Helm charts, and enabled full observability using Prometheus and Grafana. Focused on reliability, scalability, and monitoring of workloads.
-
-### Key Technologies
-
-* AWS EC2 – Infrastructure hosting for Kubernetes clusters
-* Kubernetes & Kind – Container orchestration
-* Docker – Containerization
-* Helm – Kubernetes package management
-* Prometheus & Grafana – Monitoring and observability
-
-### Achievements
-
-* Deployed a multi-service voting application on Kubernetes
-* Implemented Prometheus and Grafana for real-time monitoring
-* Improved visibility into cluster health and application performance
-* Achieved stable application performance with scalable Kubernetes workloads
-
-** with scalable and highly available application architecture
+- **AWS EC2** – Infrastructure  
+- **Docker** – Containerization  
+- **Kubernetes (Kind)** – Container orchestration  
+- **kubectl** – Cluster management  
+- **Helm** – Kubernetes package manager  
+- **Prometheus** – Metrics collection  
+- **Grafana** – Metrics visualization  
 
 ---
 
-## 🙌 Author
+## 📊 Monitoring & Observability
 
-**Onkar Ghugare**
-DevOps Engineer | Kubernetes | AWS | GitOps (Helm)
+- Installed **Prometheus and Grafana using Helm**
+- Monitored Kubernetes cluster health
+- Visualized CPU, memory, and pod metrics in Grafana dashboards
 
-LinkedIn & GitHub: @onkar-1817
+> Architecture
+
+![alt text](image.png)
+
+Observability
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+## 🎯 Learning Outcomes
+
+- Created and managed a Kubernetes cluster using Kind
+- Deployed a multi-container application on Kubernetes
+- Used Helm charts for monitoring setup
+- Gained practical experience with Kubernetes observability
 
 ---
 
-⭐ If you find this project useful, don’t forget to give the repository a star!
+## 🚀 Future Improvements
+
+- Add Ingress for external access  
+- Implement CI/CD pipeline  
+- Add alerting using Alertmanager  
+
+---
+
+## ⭐ Conclusion
+
+This project helped me strengthen my **Kubernetes, Helm, and monitoring skills**, which are essential for a **DevOps Engineer** role.
