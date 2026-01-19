@@ -87,15 +87,6 @@ Implemented and managed a containerized microservices application on AWS EC2 usi
 
 ---
 
-## 🚀 Future Enhancements
-
-* Add CI/CD pipeline using GitHub Actions or Jenkins
-* Configure Ingress with AWS ALB
-* Integrate Alertmanager for alerts
-* Secure Grafana with authentication
-
----
-
 ## 🙌 Author
 
 **Onkar Ghugare**
