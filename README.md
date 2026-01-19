@@ -43,7 +43,6 @@ The voting application consists of the following components:
 - Monitored Kubernetes cluster health
 - Visualized CPU, memory, and pod metrics in Grafana dashboards
 ## 🏗️ Architecture
-
 ![K8s Kind Voting App Architecture](images/k8-kind-voting-app.png)
 
 ## 📊 Observability
