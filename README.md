@@ -1,3 +1,14 @@
+## Project Note
+This project is forked from an open-source Kubernetes voting app.
+I have extended and customized it with:
+- Deployment on KIND cluster on AWS EC2
+- Ingress configuration
+- Prometheus & Grafana monitoring
+- Updated manifests and screenshots
+
+  ---
+  
+
 # 🚀 K8s Kind Voting App
 
 **Author:** Onkar Ghugare  
